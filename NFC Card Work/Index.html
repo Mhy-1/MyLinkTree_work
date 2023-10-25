@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" style="border-radius: 50%;" href="logo.JPG" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+    </section>
+    <!--Small text-->
+
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#" target="__blank">
+        <img src="logo.JPG" alt="Profile Picture">
+    </a>
+
+
+
+    <div id="userName">
+        Mshary Dajam
+        <p style="color: var(--heading);"> Software Engineering </p>
+    </div>
+
+
+    <div class="morph">
+        <div style="--i:1s">Web developer</div>
+        <div style="--i:2s">programmer</div>
+        <div style="--i:3s">UI/UX</div>
+        <div style="--i:4s">Mobile Programmer</div>
+        <div style="--i:5s">Web developer</div>
+        <div style="--i:6s">programmer</div>
+        <div style="--i:7s">UI/UX</div>
+        <div style="--i:8s">Mobile Programmer</div>
+    </div>
+
+    <div class="rowlinks">
+
+
+
+        <div class="links">
+
+            <a class="link" href="#" target="_blank">
+                <i class="fab fa-linkedin">&nbsp;&nbsp;</i>Linkedin
+            </a>
+            <a class="link" href="#" target="_blank">
+                <i class="fab fa-instagram">&nbsp;&nbsp;</i>Instagram
+            </a>
+            <a class="link" href="#" target="_blank">
+                <i class="fab fa-whatsapp">&nbsp;&nbsp;</i>whatsapp
+            </a>
+            <a class="link" href="https://msharydajam.site/" target="_blank">
+                <img class="cicon" src="/resume.png" alt="">&nbsp;&nbsp;</i>My Resuem Site
+            </a>
+        </div>
+
+        <div class="links">
+            <a class="link" href="#" target="_blank">
+                <i class="fab fa-github">&nbsp;&nbsp;</i>Github
+            </a>
+            <a class="link" href="#" target="_blank">
+                <i class="fab fa-twitter">&nbsp;&nbsp;</i>Twitter
+            </a>
+            <div class="tooltip">
+                <button onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            <i class="fab fa-discord">&nbsp;&nbsp;</i>Discord
+            </button>
+            </div>
+            <a class="link" href="https://vcard.link/card/DnDQ.vcf" target="_blank">
+                <img class="cicon" src="/download.png" alt="">&nbsp;&nbsp;</i>Save My Number
+            </a>
+
+
+        </div>
+
+
+        <script>
+            function myFunction() {
+                var copyText = "gd.gp";
+                navigator.clipboard.writeText(copyText);
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copied: " + copyText;
+            }
+
+            function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy to clipboard";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
